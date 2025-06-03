@@ -1,5 +1,13 @@
-*{
-    margin: 0; /*Elimina los margenes*/
-    padding: 0; /*Elimina los rellenos*/
-    box-sizing: content-box; /*Incluye el padding y border detro del tamaño del elemeto*/
+* {
+  margin: 0; /*Elimina los margenes*/
+  padding: 0; /*Elimina los rellenos*/
+  box-sizing: content-box; /*Incluye el padding y border detro del tamaño del elemeto*/
+}
+
+body {
+  display: flex; /* Usa flexbox para el diseño del cuerpo */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  min-height: 100vh; /* Altura mínima de la ventana */
+  background: #262a33; /* Color de fondo */
 }
