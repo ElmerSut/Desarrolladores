@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .menu {
     position: relative; /*posiciona relativamente el cotenido para que los hijos absolutos se ubiquen dentro*/
@@ -23,4 +24,10 @@
     cursor: pointer; /*cambia al pasar el cursor*/
     transition: 1.25s; /*animación suave al momento de activarse*/
     z-index: 5; /*asegura que el botón esté por encima de los íconos*/
+=======
+*{
+    margin: 0; /*Elimina los margenes*/
+    padding: 0; /*Elimina los rellenos*/
+    box-sizing: content-box; /*Incluye el padding y border detro del tamaño del elemeto*/
+>>>>>>> 7570e3ccb9712a14ae86c30c97b65fe48816de4a
 }
