@@ -11,3 +11,29 @@ body {
   min-height: 100vh; /* Altura mínima de la ventana */
   background: #262a33; /* Color de fondo */
 }
+
+.menu {
+  position: relative; /* Posiciona relativamente el contenido para que los hijos absolutos se ubiquen respecto a este */
+  width: 280px; /* Ancho */
+  height: 280px; /* Altura */
+  display: flex; /* Flex para centrar el contenido */
+  align-items: center; /* Centrado de forma vertical */
+  justify-content: center; /* Centrado de forma horizontal */
+}
+
+.menu .toggle {
+  position: relative; /* Posición relativa para animación o elementos internos */
+  height: 60px; /* Altura */
+  width: 60px; /* Anchura */
+  background: #fff; /* Color de fondo */
+  border-radius: 50%; /* Bordes redondeados */
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15); /* Sombra */
+  display: flex; /* Centrado de icono dentro del botón */
+  align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal */
+  color: #333; /* Color de icono */
+  font-size: 2rem; /* Tamaño de icono */
+  cursor: pointer; /* Manita al pasar el cursor */
+  transition: 1.25s; /* Animación suave al momento de activarse */
+  z-index: 1000; /* Asegura que el botón esté por encima de los íconos */
+}
