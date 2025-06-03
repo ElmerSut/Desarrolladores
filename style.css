@@ -1,0 +1,26 @@
+
+.menu {
+    position: relative; /*posiciona relativamente el cotenido para que los hijos absolutos se ubiquen dentro*/
+    width: 280px; /*es el ancho*/
+    height: 280px; /*es la altura*/
+    display: flex; /*flex para centrar el contenido*/
+    align-items: center; /*centrado forma vertical*/
+    justify-content: center; /*centrado de forma horizontal*/
+}
+
+.menu .toggle {
+    position: relative; /*posición relativa para posición o elementos internos*/
+    height: 60px; /*altura*/
+    width: 60px; /*anchura*/
+    background: #fff; /*color de fondo*/
+    border-radius: 50%; /*bordes redondeados*/
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15); /*sombras*/
+    display: flex; /*centrado de íconos dentro del botón*/
+    align-items: center; /*centrado vertical*/
+    justify-content: center; /*cetrado horizontal*/
+    color: #333; /*color del ícono*/
+    font-size: 2rem; /*tamaño del ícono*/
+    cursor: pointer; /*cambia al pasar el cursor*/
+    transition: 1.25s; /*animación suave al momento de activarse*/
+    z-index: 5; /*asegura que el botón esté por encima de los íconos*/
+}
