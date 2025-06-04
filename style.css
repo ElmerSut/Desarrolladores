@@ -39,7 +39,7 @@ body {
 }
 
 .menu li {
-    position: abslute; /*posiciona los iconos absolutamente dentro del menu*/
+    position: absolute; /*posiciona los iconos absolutamente dentro del menu*/
     left: 0; /*inicia desde el lado izquierdo*/
     list-style: none; /*quita los estilos de la lista predetermiada*/
     transition: 0.5s; /*alineacion para mostrar los iconos*/
