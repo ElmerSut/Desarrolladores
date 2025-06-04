@@ -22,20 +22,25 @@ body {
 }
 
 .menu .toggle {
-  position: relative; /* Posición relativa para animación o elementos internos */
-  height: 60px; /* Altura */
-  width: 60px; /* Anchura */
-  background: #fff; /* Color de fondo */
-  border-radius: 50%; /* Bordes redondeados */
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15); /* Sombra */
-  display: flex; /* Centrado de icono dentro del botón */
-  align-items: center; /* Centrado vertical */
-  justify-content: center; /* Centrado horizontal */
-  color: #333; /* Color de icono */
-  font-size: 2rem; /* Tamaño de icono */
-  cursor: pointer; /* Manita al pasar el cursor */
-  transition: 1.25s; /* Animación suave al momento de activarse */
-  z-index: 1000; /* Asegura que el botón esté por encima de los íconos */
+  position: relative; /* posición relativamente para que los hijos absolutos se posicionen respecto a él */
+  height: 60px; /* alto */
+  width: 60px; /* ancho */
+  background: #fff; /* color de fondo */
+  border-radius: 50%; /* borde redondeado */
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15); /* sombra */
+  display: flex; /* centrado iconos dentro del boton */
+  align-items: center; /* centrado vertical */
+  justify-content: center; /* centrado horizontal */
+  color: #333; /* color de texto */
+  font-size: 2rem; /* tamaño de iconos */
+  cursor: pointer; /* cambia al pasar el cursor*/
+  transition: 1.25s; /* animacion suave */
+  z-index: 5; /* Asegura que el botón esté por encima de los iconos */
+}
+
+.menu.active .toggle {
+  transform: rotate(360deg); /*rotación de 360 grados*/
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 0 0 2px #333, 0 0 0 8px #fff; /*sombras*/
 }
 
 .menu li {
