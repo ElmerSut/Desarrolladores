@@ -67,7 +67,7 @@ body {
     background-color: #fff; /*color de fondo*/ 
     align-items: center; /*centrado vertical*/ 
     justify-content: center; /*centrado horizontal*/ 
-    border-radius 50%; /*bordes redondeados*/ 
+    border-radius: 50%; /*bordes redondeados*/ 
     font-size: 1.75rem; /*tamano del icono*/ 
     color: var(--clr); /*usa el color predeterminado de cada red social*/ 
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15); /*sombra*/ 
