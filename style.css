@@ -73,3 +73,10 @@ body {
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15); /*sombra*/ 
     transition: 0.5s; /*transicion suave para efectos*/
 }
+
+ .menu li:hover a{
+   font-size: 2.5rem; /*aumenta el tamaño del icono al pasar el cursor*/
+   box-shadow:  /*añade efecto de doble borde color rojo y blanco*/
+   0 0 0 2px var(--clr),
+   0 0 0 6px #fff;
+ }
