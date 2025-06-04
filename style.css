@@ -37,3 +37,34 @@ body {
   transition: 1.25s; /* Animación suave al momento de activarse */
   z-index: 1000; /* Asegura que el botón esté por encima de los íconos */
 }
+
+.menu li {
+    position: abslute; /*posiciona los iconos absolutamente dentro del menu*/
+    left: 0; /*inicia desde el lado izquierdo*/
+    list-style: none; /*quita los estilos de la lista predetermiada*/
+    transition: 0.5s; /*alineacion para mostrar los iconos*/
+    transform: rotate(calc(360deg / 8 * var(--i))); /*gira el icono segun el indice para formar un icono*/
+    transform-origin: 140px; /*punto de rotacion a 140px del centro*/ 
+    scale: 0; /*inicialmente oculto*/ 
+    transition-delay: calc(0.5s * var(--i)); /*retraso escalonado para animacion en cascada*/ 
+}
+
+.menu.active li {
+    scale: 1; /*muestra los iconos en escala 1 cuando el menu esta activo*/
+}
+
+.menu li a {
+    position: relative; /*posicina relativamente para posibles efectos*/ 
+    display: flex; /*flexbox para centrar icono*/ 
+    transform: rotate(calc(360 / 8 * var(--i))); /*gira el icono en sentido contrario para que se vea recto*/ 
+    width: 60px; /*ancho*/ 
+    height: 60px; /*alto*/ 
+    background-color: #fff; /*color de fondo*/ 
+    align-items: center; /*centrado vertical*/ 
+    justify-content: center; /*centrado horizontal*/ 
+    border-radius 50%; /*bordes redondeados*/ 
+    font-size: 1.75rem; /*tamano del icono*/ 
+    color: var(--clr); /*usa el color predeterminado de cada red social*/ 
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15); /*sombra*/ 
+    transition: 0.5s; /*transicion suave para efectos*/
+}
